@@ -1,0 +1,65 @@
+<DOCTYPE! html>
+<html>
+<head>
+	<title>Silk Road</title>
+	<link rel="stylesheet" type="text/css" href="../css/dropdown_m.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+  <script src="../js/ads.js"></script>
+	<meta charset="UTF-8">
+</head>
+
+<body onload="adView()">
+<header>
+	<img src="../imgs/source_imgs/logo.png" id="logo_img">
+	<img src="../imgs/source_imgs/title_img.png" id="title_img">
+</div>
+</header>
+
+<ul>
+	<li><a href="main_logged.html">Home</a></li>
+</ul>
+
+<div id="AdOpen">
+  <h4 id="adOpenName"></h4>
+  <img id="adOpenImg">
+  <div>
+    <div class="desc_n">
+    <p>Date added:</p><br>
+    <p>Home delivery:</p><br>
+    <p>Price:</p><br>
+    <p>Quantity:</p><br>
+    <p>Description</p><br>
+    </div>
+    <div class="desc_c">
+    <p id="dateAdded"></p><br>
+    <p id="homeDelivery" style="color:red;font-weight: bold;"></p><br>
+    <p id="price"></p><br>
+    <p id="quantityShow" style="color:blue;font-weight: bold;">></p><br>
+    <p id="adDescription"></p><br>
+    </div>
+  </div>
+  <div id="buy">
+    <form>
+      <input id="payment" type="number" name="quantity" value="1" size="5" min="1" max="1000" required>Quantity<br>
+      <select class="buy_inft1" class="category" name="payment">
+        <option value="Online">Online</option>
+        <option value="By delivery">By delivery</option>
+        <option value="Cash">Cash</option>
+      </select>Payment type<br>
+      <input type="checkbox" id="buy_inft" class="category" name="delivery"><br>Home delivery
+      <button id="buy_btn" type="submit" value="Submit" onclick="buy()">Buy</button>
+    </form>
+</div>
+</div>
+
+	
+<footer>
+	<marquee id="scrolling_text" behavior="scroll" direction="left">Silk Road 4.0 made by Aleksa Vujic................................Welcome!</marquee>	
+</footer>
+
+<script>
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="../css/r_page.css">
+	<script src="../js/user.js"></script>
+</head>
+<body onload="changeUserShow()">
+<header>
+	<marquee id="scrolling_text" behavior="scroll" direction="left">Read website terms and conditions first!....Silk Road 4.0</marquee>
+		<img src="../imgs/source_imgs/logo1.png" id="logo_img">
+		<img src="../imgs/source_imgs/title_img.png" id="title_img">
+	
+</header>
+<div id="form_sheet">
+		<h1 id="title_text">Change account</h1>
+		<input id="usernameChange" class="textbox" type="text" size="40" name="username" required>Username<br>
+		<input id="passwordChange1" class="textbox" type="password" name="password" required>Password<br>
+		<input id="passwordChange2" class="textbox" type="password" name="password" required>Repeat password<br>
+		<input id="nameChange" class="textbox" type="text" size="30" name="name" required>Name<br>
+		<input id="surnameChange" class="textbox" type="text" size="30" name="surname" required>Surname<br>
+		<select id="genderChange" class="textbox" name="gender">
+    		<option value="Male">Male</option>
+    		<option value="Female">Female</option>
+    	</select>Gender<br>
+		<input id="imageChange" class="file_add" type="file" name="pic" accept="image/*"><br>
+		<input id="dateChange" class="date" type="date" name="dateofbirth">Date of birth<br>
+		<input id="emailChange" class="textbox" type="email" size="30" name="email" required>Email<br>
+		<input id="phoneChange" class="textbox" type="tel" size="30" name="telnumber">Phone num.<br>
+		<input id="addressChange" class="textbox" type="text" size="40" name="address" required>Address<br>
+		<button id="subbutton" type="button" value="Submit" onclick="changeUserChange()">Submit</button>
+</div>
+
+</body>
+</html>

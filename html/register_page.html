@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="../css/r_page.css">
+	<script src="../js/register.js"></script>
+</head>
+<body>
+<header>
+	<marquee id="scrolling_text" behavior="scroll" direction="left">Read website terms and conditions first!....Silk Road 4.0</marquee>
+		<img src="../imgs/source_imgs/logo1.png" id="logo_img">
+		<img src="../imgs/source_imgs/title_img.png" id="title_img">
+	
+</header>
+<div id="form_sheet">
+		<h1 id="title_text">Create account</h1>
+		<input id="usernameInput" class="textbox" type="text" size="40" name="username" required>Username<br>
+		<input id="passwordInput1" class="textbox" type="password" name="password" required>Password<br>
+		<input id="passwordInput2" class="textbox" type="password" name="password" required>Repeat password<br>
+		<input id="nameInput" class="textbox" type="text" size="30" name="name" required>Name<br>
+		<input id="surnameInput" class="textbox" type="text" size="30" name="surname" required>Surname<br>
+		<select id="genderInput" class="textbox" name="gender">
+    		<option value="Male">Male</option>
+    		<option value="Female">Female</option>
+    	</select>Gender<br>
+		<input id="imageInput" class="file_add" type="file" name="pic" accept="image/*"><br>
+		<input id="dateInput" class="date" type="date" name="dateofbirth">Date of birth<br>
+		<input id="emailInput" class="textbox" type="email" size="30" name="email" required>Email<br>
+		<input id="phoneInput" class="textbox" type="tel" size="30" name="telnumber">Phone num.<br>
+		<input id="addressInput" class="textbox" type="text" size="40" name="address" required>Address<br>
+		<button onclick="register()" id="subbutton" type="submit" value="Submit">Submit</button>
+</div>
+
+</body>
+</html>

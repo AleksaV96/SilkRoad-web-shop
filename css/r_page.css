@@ -1,0 +1,163 @@
+body {
+	background-color: #BFE8D1;
+	background-repeat: no-repeat;
+	background-image: url("../imgs/source_imgs/logo.png");
+	background-position: bottom right;
+	background-size: 12cm 12cm;
+	margin: 0px;
+	margin-bottom: 5mm;
+}
+
+header {
+	margin: 0cm;
+}
+
+#logo_img {
+	height: 40mm;
+	width: 40mm;
+	margin-left: 54mm;
+	margin-top: 2mm;
+}
+
+#title {
+	position: relative;
+	margin-top: 5mm;
+	margin-right: 0px;
+}
+
+
+
+#form_sheet {
+	top: -10px;
+	margin-left: 4.5cm;
+	background: rgba(184, 188, 185, 0.7);
+	height: 20cm;
+	width: 18cm; 
+	border-radius: 60px;
+
+}
+
+.textbox {
+	margin-left: 2cm;
+	margin-right: 0.4cm;
+	margin-top: 0.4cm;
+	height: 0.8cm;
+	position: relative;
+	z-index: 1;
+	border: solid 1px;
+	font-size: 15px;
+	outline: none;
+	border-radius: 3px;
+}
+
+.radiobtn {
+	margin-left: 2cm;
+	margin-top: 0.4cm;
+	position: relative;
+	z-index: 1; 
+	size: 0.3mm;
+}
+
+.date {
+	margin-left: 2cm;
+	margin-top: 0.4cm;
+	margin-right: 0.4cm;
+	outline: none;
+	border: solid 1px;
+}
+
+#subbutton {
+	background-color: #565656;
+	color: white;
+	margin-top: 0.5cm;
+	margin-left: 2cm;
+	font-family: "Arial Black", Gadget, sans-serif;
+	padding: 10px;
+	font-size: 20px;
+	border: none;
+	outline: none;
+}
+
+#subbutton:hover {
+	color: yellow;
+	cursor: pointer;
+}
+
+#scrolling_text {
+	background-color: #84c994;
+	font-family: "Arial", Gadget, sans-serif;
+	font-weight: bold;
+	padding-top: 2mm;
+	padding-bottom: 2mm;
+}
+
+#title_img {
+	height: 35mm;
+	width: 11cm;
+	margin-bottom: 0px;
+}
+
+#title_text {
+	color: #565656;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 1cm;
+	font-weight: bolder;
+	position: relative;
+	margin-left: 47mm;
+	margin-top: 10mm;
+	z-index: 1;
+}
+
+/* new Ad page css! */
+
+#title_text1 {
+	color: #565656;
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 1cm;
+	font-weight: bolder;
+	position: relative;
+	margin-left: 35mm;
+	margin-top: 10mm;
+	z-index: 1;
+}
+
+.category {
+	margin-left: 2cm;
+	margin-right: 0.4cm;
+	height: 0.7cm;
+	outline: none;
+	border: solid 1px;
+	margin-top: 0.4cm;
+}
+
+.file_add {
+	margin-left: 2cm;
+	margin-right: 0.4cm;
+	height: 0.7cm;
+	outline: none;
+	margin-top: 0.4cm;
+}
+
+.desc {
+	margin-left: 2cm;
+	margin-right: 0.4cm;
+	outline: none;
+	border: solid 1px;
+	margin-top: 0.4cm;
+	border-radius: 3px;
+}
+
+.checkbox {
+	margin-left: 2cm;
+	margin-right: 0.4cm;
+	outline: none;
+	border: solid 1px;
+	margin-top: 0.4cm;
+	height: 0.5cm;
+	width: 0.5cm;
+	margin-bottom: 0.7cm;
+}
+
+
+
+

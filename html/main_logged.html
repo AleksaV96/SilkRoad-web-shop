@@ -1,0 +1,56 @@
+<DOCTYPE! html>
+<html>
+<head>
+	<title>Silk Road</title>
+	<link rel="stylesheet" type="text/css" href="../css/dropdown_m.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+  <script src="../js/login.js"></script>
+  <script src="../js/ads.js"></script>
+  <meta charset="UTF-8">
+</head>
+
+<body onload="checkIfOnline(); onlineUser(); parseAds();">
+<header>
+	<img src="../imgs/source_imgs/logo.png" id="logo_img">
+	<img src="../imgs/source_imgs/title_img.png" id="title_img">
+	<div id="profile">
+    <a id="user_name" href="profile_view.html"></a>
+    <a href="">/</a>
+    <a onclick="logout()">Logout</a>
+    <img id="prof_pic" onclick="location.href='profile_view.html'" src="../imgs/source_imgs/profile_pic.jpg">
+
+  		
+  </div>
+</div>
+</header>
+
+<ul>
+	<li><a href="main_logged.html">Home</a></li>
+	<li><a href="add_page.html">Add</a></li>
+		<li class="dropdown">
+    	<a href="#" class="dropbtn">Categories</a>
+    		<div class="dropdown-content">
+      		<a onclick="category('CPU')">CPU</a>
+          <a onclick="category('GPU')">GPU</a>
+          <a onclick="category('RAM')">RAM</a>
+          <a onclick="category('SSD/HDD')">HDD/SSD</a>
+          <a onclick="category('CASE')">CASE</a>
+          <a onclick="category('POWER SUPPLY')">P. Supply</a>
+    	</div>
+  	</li>
+ 	<li style="float: right" id="button"><button id="src_btn" style="cursor: pointer"><img id="srcbtn_img" src="../imgs/source_imgs/search_white.png"></button></li>
+ 	<li style="float: right"><input onkeyup="search()" type="search" placeholder="  Search..." id="search_field"></li>
+</ul>
+
+<div id="AdBench">
+
+</div>
+	
+
+<footer>
+	<marquee id="scrolling_text" behavior="scroll" direction="left">Silk Road 4.0 made by Aleksa Vujic................................Welcome!</marquee>	
+</footer>
+
+</body>
+</html>
+

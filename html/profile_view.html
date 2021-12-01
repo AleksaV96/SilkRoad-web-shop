@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="../css/r_page.css">
+	<script src="../js/user.js"></script>
+</head>
+<body onload="showUser(); disSelect()">
+<header>
+	<marquee id="scrolling_text" behavior="scroll" direction="left">Read website terms and conditions first!....Silk Road 4.0</marquee>
+		<img src="../imgs/source_imgs/logo1.png" id="logo_img">
+		<img src="../imgs/source_imgs/title_img.png" id="title_img">
+	
+</header>
+<div id="form_sheet">
+		<h1 id="title_text">View account</h1>
+		<input id="usernameView" class="textbox" type="text" size="40" name="username" readonly>Username<br>
+		<input id="nameView" class="textbox" type="text" size="30" name="name" readonly>Name<br>
+		<input id="surnameView" class="textbox" type="text" size="30" name="surname" readonly>Surname<br>
+		<select id="genderView" class="textbox" name="gender">
+    		<option value="Male" readonly>Male</option>
+    		<option value="Female" readonly>Female</option>
+    	</select>Gender<br>
+		<img id="imageView" class="file_add" style="height: 2cm;width: 2cm; border-style: solid; border-width: 1px;"><br>
+		<input id="dateView" class="textbox" size="7" readonly>Date of birth<br>
+		<input id="emailView" class="textbox" type="email" size="30" name="email" readonly>Email<br>
+		<input id="phoneView" class="textbox" type="tel" size="30" name="telnumber" readonly>Phone num.<br>
+		<input id="addressView" class="textbox" type="text" size="40" name="address" readonly>Address<br>
+		<button id="subbutton" type="button" value="Change" onclick="location.href='profile_change.html'">Change</button>
+	</form>
+
+<script>
+function disSelect() {
+    document.getElementById("genderView").disabled = true;
+}
+</script>
+
+</div>
+
+</body>
+</html>

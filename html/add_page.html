@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="../css/r_page.css">
+	<script src="../js/ads.js"></script>
+</head>
+<body>
+<header>
+	<marquee id="scrolling_text" behavior="scroll" direction="left">Read website terms and conditions first!....Silk Road 4.0</marquee>
+		<img src="../imgs/source_imgs/logo1.png" id="logo_img">
+		<img src="../imgs/source_imgs/title_img.png" id="title_img">
+	
+</header>
+<div id="form_sheet">
+		<h1 id="title_text1">New advertisement</h1>
+		<input id="adNameInput" class="textbox" type="text" size="40" name="username"  required>Advetrisment name<br>
+		<input id="adPriceInput" type="number" class="textbox">Price<br>
+		<input id="adQInput" type="number" class="textbox" min="0" max="200" value="1" required>Quantity<br>
+		<select id="adCategoryInput" class="category" name="category">
+    		<option value="gpu">GPU</option>
+    		<option value="cpu">CPU</option>
+    		<option value="ram">RAM</option>
+    		<option value="ssd/hdd">SSD/HDD</option>
+    		<option value="power supply">Power supply</option>
+    		<option value="case">Case</option>
+  		</select>Category<br>
+  		<textarea id="adDescInput" class="desc" rows="7" cols="30" name="Description" required>Description</textarea><br>
+  		<input id="adImageInput" class="file_add" type="file" name="pic" accept="image/*" required><br>
+  		<select id="adHomeDlvrInput" class="category" name="category">
+    		<option value="YES">YES</option>
+    		<option value="NO">NO</option>
+    	</select>Home delivery<br>
+
+		<button onclick="createAd()" id="subbutton" type="submit" value="Submit">Submit</button>
+</div>
+
+</body>
+</html>

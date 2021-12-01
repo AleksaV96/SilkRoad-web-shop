@@ -1,0 +1,63 @@
+<DOCTYPE! html>
+<html>
+<head>
+	<title>Silk Road</title>
+	<link rel="stylesheet" type="text/css" href="../css/dropdown_m.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<script src="../js/login.js"></script>
+	<script src="../js/ads.js"></script>
+	<meta charset="UTF-8">
+</head>
+
+
+
+<body onload="parseAds()">
+<header>
+	<img src="../imgs/source_imgs/logo.png" id="logo_img">
+	<img src="../imgs/source_imgs/title_img.png" id="title_img">
+	<div id="dropdown">
+  		<button type="button" id="dropbtn" onclick="login()">Login</button>
+  			<div id="dropdown-content">
+    			<input id="inpt_u" type="text" name="username" placeholder="Username">
+    			<input id="inpt_p" type="password" name="password" placeholder="Password">
+    			<div style="float: right;"><input type="checkbox" name="remember">Stay logged in<br></div>
+    			<a id="register_b" href="register_page.html" target="_blanc">Register</a>
+  	</div>
+</div>
+</header>
+
+<ul>
+	<li><a href="main.html">Home</a></li>
+	<li><a href="main.html" onclick="login_error()">Add</a></li>
+		<li class="dropdown">
+    	<a href="#" class="dropbtn">Categories</a>
+    		<div class="dropdown-content">
+      		<a onclick="category('CPU')">CPU</a>
+      		<a onclick="category('GPU')">GPU</a>
+     		<a onclick="category('RAM')">RAM</a>
+     		<a onclick="category('SSD/HDD')">HDD/SSD</a>
+     		<a onclick="category('CASE')">CASE</a>
+     		<a onclick="category('POWER SUPPLY')">P. Supply</a>
+    	</div>
+  	</li>
+ 	<li style="float: right" id="button"><button id="src_btn" style="cursor: pointer"><img id="srcbtn_img" src="../imgs/source_imgs/search_white.png"></button></li>
+ 	<li style="float: right"><input onkeyup="search()" type="search" placeholder="  Search..." id="search_field"></li>
+</ul>
+
+<div id="AdBench">
+
+</div>
+
+<footer>
+	<marquee id="scrolling_text" behavior="scroll" direction="left">Silk Road 4.0 made by Aleksa Vujic................................Welcome!</marquee>	
+</footer>
+
+<script>
+function login_error() {
+    alert("You must login");
+}
+</script>
+
+</body>
+</html>
+
